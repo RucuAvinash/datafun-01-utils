@@ -58,6 +58,7 @@ logger.info("Logger loaded.")
 # ----------------------------------
 is_accepting_clients: bool = True
 offers_remote_workshops: bool = True
+is_work_from_home: bool = True
 
 # TODO: Declare and initialize a new boolean variable (e.g. `is_hiring` and set it to False)
 
@@ -66,16 +67,17 @@ offers_remote_workshops: bool = True
 # ----------------------------------
 current_year: int = 2025
 year_started: int = 2020
+number_of_employees:int = 25
 
 # TODO: Declare and initialize a new integer variable (e.g. `number_of_employees` and set it to 25)
 
 # ----------------------------------
 # Define String variables
 # ----------------------------------
-author: str = "Denise Case"  # TODO: change to your name
+author: str = "Rucu Sethu"  # TODO: change to your name
 organization: str = "Stellar Analytics"  # TODO: change the org name
-motto: str = "Clear. Useful. On time."  # TODO: change the motto
-
+motto: str = "Clear. Strength and Support."  # TODO: change the motto
+location: str = "Wildwood,Missouri"
 # TODO: Declare and initialize a new string variable (e.g. `location` and set it to your city and state)
 
 # ----------------------------------
@@ -86,7 +88,7 @@ services: list[str] = ["Data Analysis", "Machine Learning", "Business Intelligen
 
 # example list of floating point numbers
 satisfaction_scores: list[float] = [4.8, 4.6, 4.9, 5.0, 4.7]
-
+office_locations: list[str] = ["Fremont,CA","Nashville,TX","Tampa,FL"]
 
 # TODO: Declare and initialize a new list variable (e.g. `office_locations` and set it to 3-5 cities where your org has offices)
 # TODO: Wrap each string in quotes and separate each item with a comma.
@@ -100,7 +102,7 @@ min_score: float = min(satisfaction_scores)
 max_score: float = max(satisfaction_scores)
 count_of_services: int = len(services)
 count_of_scores: int = len(satisfaction_scores)
-
+count_of_locations: int = len(office_locations)
 # TODO: Declare and initialize a new calculated variable (e.g. `count_of_locations` that uses the len() function on your list of office locations)
 
 
@@ -119,10 +121,15 @@ byline: str = f"""
 **********************************************************
 Author:                     {author}
 Motto:                      {motto}
+Location:                   {location}
 Years Active:               {years_active}
 Accepting New Clients?:     {is_accepting_clients}
 Remote Workshops?:          {offers_remote_workshops}
+work_from_home?:            {is_work_from_home}
 Services:                   {services}
+Number of Employees:        {number_of_employees}
+Office Locations:           {office_locations}
+ Count of Locations:        {count_of_locations}
 Client Satisfaction Scores: {satisfaction_scores}
 Minimum Satisfaction Score: {min_score}
 Maximum Satisfaction Score: {max_score}
@@ -171,7 +178,7 @@ def main() -> None:
 
     try:
         # TODO: Uncomment next line if you want audio feedback (use CTRL+C to stop)
-        # read_byline_aloud()
+        read_byline_aloud()
         pass
     except KeyboardInterrupt:
         logger.info("Speech interrupted by user (Ctrl+C).")
