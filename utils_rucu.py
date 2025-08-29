@@ -12,8 +12,7 @@ A short, first-week module to demonstrate key skills:
 
 Author: Rucmanidevi Sethu
 
-TODO: Replace 'lastname' in the filename with your own last (or unique) name.
-TODO: Update the file name and author in this opening docstring.
+
 TODO: Remove each TODO line AFTER you successfully complete the item.
 """
 
@@ -60,7 +59,7 @@ is_accepting_clients: bool = True
 offers_remote_workshops: bool = True
 is_work_from_home: bool = True
 
-# TODO: Declare and initialize a new boolean variable (e.g. `is_hiring` and set it to False)
+
 
 # ----------------------------------
 # Define Integer variables
@@ -69,16 +68,14 @@ current_year: int = 2025
 year_started: int = 2020
 number_of_employees:int = 25
 
-# TODO: Declare and initialize a new integer variable (e.g. `number_of_employees` and set it to 25)
 
 # ----------------------------------
 # Define String variables
 # ----------------------------------
-author: str = "Rucu Sethu"  # TODO: change to your name
-organization: str = "Stellar Analytics"  # TODO: change the org name
-motto: str = "Clear. Strength and Support."  # TODO: change the motto
+author: str = "Rucu Sethu"  
+organization: str = "Stellar Analytics"  
+motto: str = "Clear. Strength and Support."  
 location: str = "Wildwood,Missouri"
-# TODO: Declare and initialize a new string variable (e.g. `location` and set it to your city and state)
 
 # ----------------------------------
 # Define List variables
@@ -90,8 +87,6 @@ services: list[str] = ["Data Analysis", "Machine Learning", "Business Intelligen
 satisfaction_scores: list[float] = [4.8, 4.6, 4.9, 5.0, 4.7]
 office_locations: list[str] = ["Fremont,CA","Nashville,TX","Tampa,FL"]
 
-# TODO: Declare and initialize a new list variable (e.g. `office_locations` and set it to 3-5 cities where your org has offices)
-# TODO: Wrap each string in quotes and separate each item with a comma.
 
 # ----------------------------------
 # Use built-in Python operators (such as - + * /)
@@ -103,7 +98,6 @@ max_score: float = max(satisfaction_scores)
 count_of_services: int = len(services)
 count_of_scores: int = len(satisfaction_scores)
 count_of_locations: int = len(office_locations)
-# TODO: Declare and initialize a new calculated variable (e.g. `count_of_locations` that uses the len() function on your list of office locations)
 
 
 # ----------------------------------
@@ -138,7 +132,6 @@ Mean Satisfaction Score:    {mean_score:.2f}
 **********************************************************
 """
 
-# TODO: Modify the byline f-string to display your new variables as well. Use curly braces {} to embed each variable.
 
 #####################################
 # Define Global Functions
@@ -177,7 +170,6 @@ def main() -> None:
     loguru.logger.info("Byline:\n" + get_byline())
 
     try:
-        # TODO: Uncomment next line if you want audio feedback (use CTRL+C to stop)
         read_byline_aloud()
         pass
     except KeyboardInterrupt:
