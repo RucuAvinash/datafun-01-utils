@@ -166,8 +166,9 @@ def main() -> None:
     running it as a script.
     """
 
-    loguru.logger.info("STARTING main()..")
+    loguru.logger.info("STARTING main()....")
     loguru.logger.info("Byline:\n" + get_byline())
+    
 
     try:
         read_byline_aloud()
