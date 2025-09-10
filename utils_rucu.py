@@ -12,8 +12,6 @@ A short, first-week module to demonstrate key skills:
 
 Author: Rucmanidevi Sethu
 
-
-TODO: Remove each TODO line AFTER you successfully complete the item.
 """
 
 #####################################
